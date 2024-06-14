@@ -1,0 +1,408 @@
+body, html {
+	font-family: Arial, Helvetica,sans-serif;
+	margin: 0;
+	font-size: 16px;
+	min-height: 100vh;
+}
+header {
+	display: block;
+	width: 100%;
+}
+
+.hero-image {
+	background-image: url("images/banner.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	height: 400px;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: rgb(150, 14, 14);
+}
+
+
+li {
+	float: left;
+}
+li a {
+	display: block;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+li a:hover {
+	background-color: black;
+}
+
+h1,h2 {
+	margin: 1em;
+	font-size: 2em;
+}
+h1 {
+	font-size: 1.7em;
+	color: rgb(150, 14, 14);
+}
+h2 {
+	font-size: 1.7em;
+	color: rgb(150, 14, 14);
+}
+main a {
+	color: rgb(150, 14, 14);
+	text-decoration: none;
+}
+main a:hover {
+	color: rgb(150, 14, 14);
+	text-decoration: underline;
+}
+p {
+	margin: 0.8em;
+	line-height: 1.2em;
+	letter-spacing: 1px;
+}
+hr {
+	margin: 1em;
+	border: 1px dotted rgb(150, 14, 14);
+	clear: both;
+}
+
+.news img {
+	width: 15%;
+	float: left;
+	padding: 0.5em;
+	margin: 0 1em 0.5em 0.5em;
+}
+.news h2 {
+	margin: 0.5em 0.7em;
+	font-size: 1.5em;
+	color: rgb(150, 14, 14);
+}
+.news hr {
+	margin: 1em;
+	border: 1px dotted rgb(150, 14, 14);
+	clear: both;
+}
+.news time {
+	font-size: 90%;
+	font-style: italic;
+}
+.description {
+	font-weight: bold;
+	margin: 0.8em 1em 1.5em 1em;
+}
+#news_gallery figure {
+	padding: 0.5em;
+	margin: 0 1em 0.5em 1em;
+	float: left;
+	width: 10%;
+	border: 2px dotted rgb(150, 14, 14);
+}
+#news_gallery figcaption {
+	font-size: 90%;
+	text-align: center;
+}
+
+#gallery figure {
+	padding: 0.5em;
+	margin: 0 1em 0.5em 1em;
+	float: left;
+	width: 21.5%;
+	border: 2px dotted rgb(150, 14, 14);
+	margin-bottom: 42px;
+}
+#gallery figcaption {
+	font-size: 90%;
+	height: 50px;
+	text-align: center;
+}
+
+figure {
+	padding: 0.5em;
+	margin: 0 1em 0.5em 1em;
+	float: left;
+	width: 35%;
+	border: 2px dotted rgb(150, 14, 14);
+}
+figcaption {
+	font-size: 85%;
+	
+}
+img {
+	width: 100%;
+}
+video {
+	margin: 0 1em 1em 1em;
+	float: left;
+}
+#contact {
+	margin-bottom: 50px;
+}
+label {
+	display: block;
+}
+input[type=text], input[type=email], input[type=password], [type=date], select, textarea {
+    width: 50%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+	font-family: Arial, Helvetica,sans-serif;
+	font-size: 90%;
+}
+
+
+input[type=submit] {
+    display: block;
+	background-color: rgb(150, 14, 14);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+	width: 20%;
+}
+input[type=submit]:hover {
+    background-color: rgb(107, 7, 7);
+}
+
+footer {
+	background-color: rgb(150, 14, 14);
+	padding: 0,1em;
+	clear: both;
+	position:fixed;
+	bottom:0;
+	width: 100%;
+	text-align: center;
+	margin-top: 100px;
+}
+footer p {
+	color: rgb(255, 255, 255);
+	text-align: center;
+	margin: 0.5em;
+}
+footer img {
+	padding-left: 5px;
+	width: 20px;
+}
+
+#registration_form{
+	margin-bottom: 50px;
+}
+
+/* style za api-xml */
+.container-xml {
+    margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.error-message {
+    text-align: center;
+    color: rgb(150, 14, 14);
+    font-weight: 500;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.artist-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.info-box {
+    border: 1px solid #981e1e;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.info-box h2 {
+    font-size: 20px;
+    text-align: center;
+}
+
+.info-box p {
+    font-size: 16px;
+    color: #333;
+    padding: 5px;
+}
+
+.albums-tracks-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.albums-column, .tracks-column {
+    flex: 1;
+    border: 1px solid #981e1e;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.albums-column h2, .tracks-column h2 {
+    color: #981e1e;
+    font-size: 20px;
+}
+
+.albums-column ul, .tracks-column ul {
+    list-style: none;
+    padding: 0;
+    background-color: white;
+}
+
+.albums-column li img {
+    max-width: 100%;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.albums-column li p {
+    margin: 0 0 5px 0;
+    text-align: center;
+    white-space: nowrap; /* Prevent text from wrapping */
+    overflow: hidden; /* Hide overflowing text */
+    text-overflow: ellipsis; /* Add ellipsis (...) for overflowing text */
+}
+
+.albums-column ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: flex-start;
+}
+
+.albums-column li {
+    flex: 0 1 calc(33.333% - 10px);
+    text-align: center;
+    color: #333;
+    overflow: hidden; /* Prevent long titles from shifting items */
+    height: 200px; /* Set a fixed height */
+}
+
+.top-tracks {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align the list items horizontally */
+    padding: 0;
+}
+
+.top-tracks li {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 10px;
+    clear: both; /* Ensure each track is on a new line */
+    text-align: center; /* Center align the track names */
+    width: 100%; /* Ensure list items take full width */
+}
+
+
+/* style za api-json.php */
+.container {
+	margin: auto;
+    max-width: 1200px;
+    padding: 20px;
+}
+
+.heading{
+	text-align: center;
+}
+
+.json-forma{
+	text-align: center;
+}
+
+.json-forma input[type="text"] {
+    width: 25%;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.json-forma input[type="text"]:focus {
+    border-color: rgb(150, 14, 14);
+}
+
+.json-forma input[type="submit"] {
+    width: 15%;
+	margin:auto;
+}
+
+.character-list {
+    display: flex;
+    flex-wrap: wrap;
+	padding: 20px 0px 20px 40px;
+	column-gap: 20px;
+}
+
+.character {
+    width: 30%;
+	margin-bottom: 50px;
+	margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgb(150, 14, 14);
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.character h2 {
+    font-size: 20px;
+    color: rgb(150, 14, 14);
+}
+
+.character p {
+    font-size: 16px;
+    color: #333;
+}
+
+.no-characters {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 19px;
+    color: rgb(150, 14, 14);
+	margin: auto;
+}
+
+
+
+
+@media screen and (max-width: 900px) {
+	figure {
+		width: 90%;
+		margin: 1em;
+	}
+	.news img {
+		width: 95%;
+		padding: 0.5em;
+		margin: 0 1em 0.5em 0.5em;
+	}		
+	.news time {
+			margin: 0 0 0 1em;
+	}
+	#news_gallery figure {
+		padding: 0.5em;
+		margin: 0 1em 0.5em 1em;
+		float: left;
+		width: 90%;
+		border: 1px rgb(150, 14, 14);
+	}
+	#news_gallery figcaption {
+		font-size: 90%;
+		text-align: center;
+	}
+}
